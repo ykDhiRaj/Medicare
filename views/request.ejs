@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-zinc-800 h-screen w-full p-10">
+            <%if(hospital.user.length > 0){%>
+                <%hospital.user.forEach(function(reqs){%>
+                    <div class="h-[200px] mt-3 w-[400px] bg-green-400 rounded-md p-4">
+                        <h1>Appointment request</h1>
+                        <h1 class="text-xl"><%=reqs.name%></h1>
+                        <a class=" bg-blue-500 p-1 block mt-5 rounded-md" href="/acceptapp/<%=reqs.id%>/<%=hospital.id%>"> Accept </a>
+                        <a class=" bg-blue-500 p-1 block mt-5  rounded-md" href="/rejectapp/<%=reqs.id%>/<%=hospital.id%>"> Reject </a>
+                    </div>
+                    
+                    <%})%>
+                
+                <%}else{%>
+                    <h1 class="text-white text-2xl">No requests yet...</h1>
+                    <%}%>
+       
+    </div>
+</body>
+</html>

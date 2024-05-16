@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-green-200 h-screen w-full flex items-center justify-center">
+        <div class="h-[400px] w-[450px] rounded-md border-black border-2 p-4 ">
+            <h1 class="text-4xl text-center font-bold">MediCare</h1>
+            <h1 class="text-center mt-2 text-xl">Register your hospital</h1>
+            <div class=" flex items-center  mt-5">
+                    <form action="/registerhospital" method="post">
+                        <input class="mt-4 p-1 w-[410px] rounded-md block" type="text" name="name" id="" placeholder="Hospital name">
+                        <!-- <input class="mt-4 p-1 w-[410px] rounded-md block" type="username" name="username" id="" placeholder="username"> -->
+                        <input class="mt-4 p-1 w-[410px] rounded-md block" type="email" name="email" id="" placeholder="email">
+                        <input class="mt-4 p-1 w-[410px] rounded-md block" type="password" name="password" id="" placeholder="password">
+                        <div class="flex items-center justify-center">
+                            <input class="mt-2 bg-blue-400 rounded-md p-2 block" type="submit" name="submit" id="">
+                        </div>
+                    </form>
+                    
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

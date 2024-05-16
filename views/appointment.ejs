@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-zinc-800 h-screen w-full p-10">
+
+                <%appointments.accapp.forEach(function(reqs){%>
+                    <div class="h-[150px] mt-3 w-[400px] bg-green-400 rounded-md p-4">
+                        <h1>Appointment update</h1>
+                        <h1 class="text-xl"><%=reqs.name%></h1>
+                        <a class=" bg-blue-500 p-1 block mt-5 rounded-md" href="">Appointment accepted </a>
+                        
+                    </div>
+                    
+                    <%})%>
+    </div>
+</body>
+</html>
