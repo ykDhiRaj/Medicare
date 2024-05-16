@@ -38,7 +38,7 @@ app.post("/create",async (req,res)=>{
 });
 
 app.get("/login",(req,res)=>{
-    res.render("login")
+    res.render("login");
 });
 
 app.post("/login",async (req,res)=>{
